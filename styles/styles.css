@@ -28,11 +28,13 @@
       color: #000000;
   }
 
-  .navigation {
+  .navigation-link {
       font-weight: 700;
       font-size: 20px;
       line-height: 26px;
       background-color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
   }
 
   .hero {
@@ -44,4 +46,37 @@
 
   a {
     color: inherit
+  }
+
+  .hero-title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .advantages-about {
+      font-size: 22px;
+      line-height: 26px;
+  }
+
+  .advantages-list {
+    text-align: center;
+  }
+
+  .opacity-high {
+    background-color: #82B3D3;
+}
+
+  .opacity-middle {
+      background-color: rgba(131, 179, 211, 0.2);
+  }
+
+ 
+  .opacity-low {
+      background-color: rgba(131, 179, 211, 0.12);
+  }
+  .advantages-title {
+      font-size: 24;
+      line-height: 24px;
+      text-transform: uppercase;
+      font-weight: 700;
   }
