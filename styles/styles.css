@@ -16,6 +16,10 @@ font-display: swap;
 }
 
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -39,6 +43,23 @@ text-align: center;
     color: #000000;
 }
 
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    margin: 0;
+    padding: 0;
+    width: 510px;
+}
+
+.navigation-user {
+    max-width: 264px;
+    margin-left: auto;
+  }
+
 .navigation-link {
     font-family: "PT Sans Bold";
     font-size: 20px;
@@ -48,6 +69,20 @@ text-align: center;
     text-decoration: none;
 }
 
+.main-container {
+    flex-grow: 1;
+}
+
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+}
+
 .hero {
     background-image: url("../images/background-index.jpg");
     background-color: #521bac;
@@ -55,9 +90,6 @@ text-align: center;
     background-repeat: no-repeat;
 }
 
-a {
-color: inherit
-}
 
 .hero-title {
 font-size: 30px;
@@ -70,7 +102,11 @@ line-height: 36px;
 }
 
 .advantages-list {
-text-align: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .opacity-high {
