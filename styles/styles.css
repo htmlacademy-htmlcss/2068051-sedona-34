@@ -18,7 +18,7 @@ font-display: swap;
 html {
     height: 100%;
   }
-  
+
 body {
     margin: 0;
     display: flex;
@@ -27,9 +27,17 @@ body {
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
-    background-color: #FFFFFF;
+    background-color: #E5E5E5;
     color: #242424; 
     text-align: center;
+}
+
+.page-style {
+    background-color: #FFFFFF;
+    width: 1200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
@@ -49,19 +57,25 @@ text-align: center;
 
 .navigation {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
 }
-
+.navigation-logo {
+    margin-right: 30px;
+    margin-left: 70px;
+}
 .navigation-list {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
     width: 510px;
 }
 
 .navigation-user {
-    max-width: 264px;
+    display: flex;
+    list-style: none;
+    max-width: 305px;
     margin-left: auto;
+    margin-right: 70px;
   }
 
 .navigation-link {
@@ -80,6 +94,7 @@ text-align: center;
 .page-container {
     width: 1200px;
     margin: 0 auto;
+    
 }
 
 .logo {
@@ -106,13 +121,16 @@ line-height: 36px;
 }
 
 .advantages-list {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
+.advantages-item {
+    width: 400 px;
+}
 .opacity-high {
 background-color: #82B3D3;
 color: #FFFFFF;
