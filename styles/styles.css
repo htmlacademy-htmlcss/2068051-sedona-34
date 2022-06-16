@@ -91,8 +91,8 @@ body {
 .navigation-user .navigation-link {
   max-width: 42px;
   max-height: 66px;
-
 }
+
 .navigation-link {
   display: block;
   padding: 20px 17px;
@@ -103,9 +103,13 @@ body {
   text-align: center;
   text-decoration: none;
 }
+
 .navigation-button {
   padding: 9px 15px 8px;
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
+
 .main-container {
   flex-grow: 1;
 }
@@ -113,7 +117,6 @@ body {
 .page-container {
   width: 1200px;
   margin: 0 auto;
-
 }
 
 .logo-welcome {
@@ -159,7 +162,6 @@ body {
 }
 .real-city-text {
   padding: 92px 85px;
-
 }
 
 .container-food-etc {
