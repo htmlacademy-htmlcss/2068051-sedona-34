@@ -52,6 +52,7 @@ body {
 
 .button {
   font-family: inherit;
+  display: inline-block;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -103,7 +104,7 @@ body {
   text-decoration: none;
 }
 .navigation-button {
-  pagging: 9px 15px;
+  padding: 9px 15px 8px;
 }
 .main-container {
   flex-grow: 1;
@@ -118,6 +119,7 @@ body {
 .logo-welcome {
   display: block;
   margin: 0 auto;
+  margin-top: 51px;
   margin-bottom: 82px;
 }
 
@@ -274,11 +276,21 @@ p {
 
 }
 
+.search-results {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 72px;
+  margin-right: 71px;
+  width: 1057px;
+
+}
+
 .catalog-title {
   font-family: "PT Sans Bold";
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
 }
 .catalog-filter{
   display: flex;
