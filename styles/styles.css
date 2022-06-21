@@ -68,7 +68,9 @@ body {
 
 .navigation {
   display: flex;
+  margin-bottom: -10px;
 }
+
 .navigation-logo {
   margin-right: 30px;
   margin-left: 70px;
@@ -80,6 +82,7 @@ body {
   margin: 0;
   padding: 0;
   width: 510px;
+  margin-bottom: -10px;
 }
 
 .navigation-user {
@@ -98,7 +101,6 @@ body {
   padding: 20px 17px;
   font-family: "PT Sans Bold";
   font-size: 20px;
-  line-height: 26px;
   background-color: #FFFFFF;
   text-align: center;
   text-decoration: none;
@@ -153,7 +155,17 @@ body {
   margin-bottom: 90px;
 }
 
-.advantages-list, .real-city, .advantages-bridg-about {
+.advantages {
+  counter-set: advantage;
+}
+
+.advantage-order::before {
+  display: block;
+  counter-increment: advantage;
+  content: "- №" counter(advantage) " -";
+}
+
+.advantages-list, .real-city, .advantages-bridg-about, .container-aboutroad, .container-food-etc {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -166,25 +178,12 @@ body {
   order: -1;
 }
 
-.container-food-etc {
-  padding-left: 0;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.wrap-food-etc {
-  padding: 80px 85px 81px;
-}
-
 .advantages-item {
   width: 400px;
   min-height: 384px;
-  padding-left: 0;
+  padding: 20px;
   list-style-type: none;
+  box-sizing: border-box;
 }
 .opacity-high {
   background-color: #82B3D3;
@@ -207,22 +206,6 @@ body {
   font-family: "PT Sans Bold";
 }
 
-.advantages-bridge {
-  background: url("../images/photo-bridge.jpg") no-repeat left;
-}
-
-.bridge-text {
-  padding: 92px 85px;
-  padding-left: 885px;
-}
-
-.container-aboutroad {
-  display: flex;
-  list-style: none;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .hotel-search-title {
   padding-top: 91px;
@@ -242,9 +225,6 @@ body {
   min-width: 574px;
 }
 
-.subscribe-wrap {
-  margin: 94px 200px;
-}
 p {
   color: #333333;
 }
@@ -255,7 +235,7 @@ p {
   background-repeat: no-repeat;
   background-color: #2d1468;
   color: #FFFFFF;
-  height: 411px;
+  padding: 94px 200px;
 }
 
 .subscribe-title {
@@ -266,7 +246,6 @@ p {
 .subscribe-button {
   color: #FFFFFF;
   background-color: #82B3D3;
-  padding-bottom: 92px;
 }
 
 .footer-contacts {
