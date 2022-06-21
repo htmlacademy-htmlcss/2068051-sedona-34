@@ -153,15 +153,17 @@ body {
   margin-bottom: 90px;
 }
 
-.advantages-list {
-  padding-left: 0;
-}
-.real-city {
-  background: url("../images/photo-town.jpg") no-repeat right;
+.advantages-list, .real-city, .advantages-bridg-about {
   display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+  flex-basis: 100%;
 }
-.real-city-text {
-  padding: 92px 85px;
+
+.advantages-picture-bridge {
+  order: -1;
 }
 
 .container-food-etc {
