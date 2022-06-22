@@ -292,8 +292,8 @@ p {
 
 .filter-content {
   padding: 35px 70px 70px;
-
 }
+
 .filter-header-title {
   color: #FFFFFF;
   font-family: "PT Sans Bold";
@@ -302,7 +302,10 @@ p {
   margin: 0;
   text-align: left;
 }
-
+.breadcrumbs {
+  display: flex;
+  list-style: none;
+}
 .catalog-filter-title {
   font-size: 20px;
 
@@ -337,6 +340,17 @@ p {
 
 .container-infrastructure {
   margin-right: 70px;
+}
+
+.catalog-filter-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0;
+}
+.catalog-filter-list {
+  list-style-type: none;
+  margin-right: 175px;
 }
 .hotel-card-title {
   font-family: "PT Sans Bold";
@@ -413,4 +427,19 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.footer-contacts-phone {
+  font-style: normal;
+  color: inherit;
+  font-weight: 400;
+  font-size: 40px;
+  text-decoration: none;
 }
