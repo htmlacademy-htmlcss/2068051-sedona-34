@@ -51,9 +51,8 @@ body {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "PT Sans Bold";
   display: inline-block;
-  font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -86,21 +85,28 @@ body {
   background-color: #82B3D3;
 }
 
+.navigation-button {
+  min-width: 160px;
+  box-sizing: border-box;
+}
+
 .active-button {
   background-color: #7DB54F;
 }
+
 .not-active-button {
   background-color: #F2F2F2;
   color: #333333;
 }
+
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
+  margin-bottom: -10px;
 }
 
 .navigation {
   display: flex;
-  margin-bottom: -10px;
 }
 
 .navigation-logo {
@@ -136,6 +142,7 @@ body {
   background-color: #FFFFFF;
   text-align: center;
   text-decoration: none;
+  color: inherit;
 }
 
 .navigation-button {
@@ -189,7 +196,9 @@ body {
 .advantages {
   counter-set: advantage;
 }
-
+.advantages-description-city, .advantages-description-bridge {
+  color: #FFFFFF;
+}
 .advantage-order::before {
   display: block;
   counter-increment: advantage;
@@ -197,7 +206,7 @@ body {
   order: -1;
 }
 
-.advantages-list, .real-city, .advantages-bridg-about, .container-aboutroad, .container-food-etc {
+.advantages-list, .real-city, .advantages-bridge-about, .container-aboutroad, .container-food-etc {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -263,6 +272,8 @@ body {
   padding: 12px 15px;
   margin-bottom: 93px;
   min-width: 574px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 p {
@@ -279,10 +290,20 @@ p {
 }
 
 .subscribe-title {
-  font-size: 30 px;
+  font-size: 30px;
   font-family: "PT Sans Bold";
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29;
+  line-height: 36px;
 }
 
+.subscribe-description {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 46px;
+}
 .subscribe-button {
   color: #FFFFFF;
   background-color: #82B3D3;
