@@ -62,6 +62,7 @@ body {
   text-align: center;
   padding: 9px 15px 8px;
   cursor: pointer;
+  border-radius: 4px;
 }
 .pagination-button {
   font-family: "PT Sans Bold";
@@ -76,6 +77,9 @@ body {
 }
 .subscribe-button {
   font-size: 20px;
+  font-weight: 700px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .subsidiary-button {
