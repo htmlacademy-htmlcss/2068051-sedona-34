@@ -215,18 +215,20 @@
             <a class="pagination-button button" href="#">10</a>
           </li>
         </ul>
-        <span>Гостиниц на странице:</span>
-        <select class="select-number" aria-label="Количество гостиниц">
+        <div class="quantity-of-results">
+          <span>Гостиниц на странице:</span>
+          <select class="select-number" aria-label="Количество гостиниц">
           <option value="4">4</option>
         </select>
+      </div>
       </div>
       </section>
       <section class="subscribe-catalog">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="subscribe-email">Email</label>
-          <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
+          <label class="visually-hidden" for="subscribe-email">Email</label>
+          <input class="subscribe-form-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
             required>
           <button class="button subscribe-button" type="submit">
             Подписаться
