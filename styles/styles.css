@@ -128,11 +128,13 @@ body {
   max-width: 305px;
   margin-left: auto;
   margin-right: 70px;
+  position: relative
   }
-.navigation-user .navigation-link {
+
+/* .navigation-user .navigation-link {
   max-width: 42px;
   max-height: 66px;
-}
+} */
 
 .navigation-link {
   display: block;
@@ -143,8 +145,26 @@ body {
   text-align: center;
   text-decoration: none;
   color: inherit;
+  position: relative;
 }
 
+.button-search {
+  background-image: url('../images/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: center top 23px;
+  width: 45px;
+  height: 66px;
+  padding: 0;
+}
+.button-favorite {
+  background-image: url('../images/icons/favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45px;
+  height: 66px;
+  margin-right: 20px;
+  padding: 0;
+}
 .navigation-button {
   margin-top: 14px;
   margin-bottom: 14px;
@@ -255,7 +275,10 @@ body {
   order: -2;
 }
 
-
+.advantages-live {
+  background-image: url('../images/icons/food.svg');
+  background-repeat: no-repeat;
+}
 .hotel-search-title {
   padding-top: 91px;
   font-size: 30px;
@@ -340,9 +363,22 @@ p {
   list-style: none;
   margin: 0;
   margin-top: 10px;
+  padding-left: 0;
+
 }
 .breadcrumbs-link {
   font-size: 16px;
+}
+
+.breadcrumbs-item {
+  min-width: 37px;
+}
+.breadcrumbs-link-home {
+  background-image: url('../images/icons/home-page.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 13px 13px;
+  width: 37px;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -502,7 +538,32 @@ p {
   margin: 0;
   padding-left: 0;
 }
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+}
+.footer-social-link {
+  display: block;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+}
 
+.social-link-vk {
+  background-image: url('../images/icons/Social-vk.svg');
+  background-size: 24px 16px;
+}
+
+.social-link-tg {
+  background-image: url('../images/icons/Social-telegram.svg');
+  background-size: 18px 16px;
+}
+
+.social-link-youtube {
+  background-image: url('../images/icons/Social-youtube.svg');
+  background-size: 22px 17px;
+}
 .footer-contacts-phone {
   font-style: normal;
   color: inherit;
