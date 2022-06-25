@@ -63,6 +63,15 @@ body {
   cursor: pointer;
   border-radius: 4px;
 }
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
 .pagination-button {
   font-family: "PT Sans Bold";
   color: #FFFFFF;
@@ -74,6 +83,7 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
+
 .subscribe-button {
   font-size: 20px;
   font-weight: 700px;
@@ -81,14 +91,32 @@ body {
   border: 0;
 }
 
+.pagination-button:hover {
+  background-color: #82B3D3;
+}
+
+.pagination-button:focus {
+  background-color: #82B3D3;
+}
+
 .subsidiary-button {
   background-color: #82B3D3;
+}
+
+.subsidiary-button:focus {
+  background-color: #68A2CA;
+}
+
+.subsidiary-button:hover {
+  background-color: #68A2CA;
 }
 
 .navigation-button {
   min-width: 160px;
   box-sizing: border-box;
 }
+
+
 
 .active-button {
   background-color: #7DB54F;
