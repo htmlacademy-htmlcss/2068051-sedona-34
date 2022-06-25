@@ -59,6 +59,9 @@
                   </span>
                 </a>
               </li>
+              <li class="breadcrumbs-item breadcrumbs-pointer">
+                <span class="visually-hidden">стрелка</span>
+              </li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
@@ -83,32 +86,24 @@
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип Жилья</legend>
-              <ul class="catalog-filter-list">
-                <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control catalog-filter-item">
                     <input class="control-input" type="radio" name="type-accomodation" value="hotel" checked>
                     Гостиница
                   </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control catalog-filter-item">
                     <input class="control-input" type="radio" name="type-accomodation" value="motel">
                     Мотель
                   </label>
-                </li>
-                <li class="catalog-filter-item">
-                  <label class="control">
+                  <label class="control catalog-filter-item">
                     <input class="control-input" type="radio" name="type-accomodation" value="apartments">
                     Апартаменты
                   </label>
-                </li>
-              </ul>
             </fieldset>
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Стоимость</legend>
               <input type="range" min="0" max="9000" step="1">
             </fieldset>
-            <button class="button" type="submit">Применить</button>
+            <button class="button subsidiary-button" type="submit">Применить</button>
             <input type="reset" value="Сбросить">
           </form>
         </div>
