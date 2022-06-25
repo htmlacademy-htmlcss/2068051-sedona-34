@@ -51,9 +51,8 @@ body {
 }
 
 .button {
-  font-family: inherit;
+  font-family: "PT Sans Bold";
   display: inline-block;
-  font-weight: 700;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -62,7 +61,17 @@ body {
   text-align: center;
   padding: 9px 15px 8px;
   cursor: pointer;
+  border-radius: 4px;
 }
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
 .pagination-button {
   font-family: "PT Sans Bold";
   color: #FFFFFF;
@@ -74,29 +83,58 @@ body {
   text-align: center;
   box-sizing: border-box;
 }
+
 .subscribe-button {
   font-size: 20px;
+  font-weight: 700px;
+  border-radius: 4px;
+  border: 0;
+}
+
+.pagination-button:hover {
+  background-color: #82B3D3;
+}
+
+.pagination-button:focus {
+  background-color: #82B3D3;
 }
 
 .subsidiary-button {
   background-color: #82B3D3;
 }
 
+.subsidiary-button:focus {
+  background-color: #68A2CA;
+}
+
+.subsidiary-button:hover {
+  background-color: #68A2CA;
+}
+
+.navigation-button {
+  min-width: 160px;
+  box-sizing: border-box;
+}
+
+
+
 .active-button {
   background-color: #7DB54F;
 }
+
 .not-active-button {
   background-color: #F2F2F2;
   color: #333333;
 }
+
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
+  margin-bottom: -10px;
 }
 
 .navigation {
   display: flex;
-  margin-bottom: -10px;
 }
 
 .navigation-logo {
@@ -118,11 +156,13 @@ body {
   max-width: 305px;
   margin-left: auto;
   margin-right: 70px;
+  position: relative
   }
-.navigation-user .navigation-link {
+
+/* .navigation-user .navigation-link {
   max-width: 42px;
   max-height: 66px;
-}
+} */
 
 .navigation-link {
   display: block;
@@ -132,8 +172,27 @@ body {
   background-color: #FFFFFF;
   text-align: center;
   text-decoration: none;
+  color: inherit;
+  position: relative;
 }
 
+.button-search {
+  background-image: url('../images/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: center top 23px;
+  width: 45px;
+  height: 66px;
+  padding: 0;
+}
+.button-favorite {
+  background-image: url('../images/icons/favorite.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 45px;
+  height: 66px;
+  margin-right: 20px;
+  padding: 0;
+}
 .navigation-button {
   margin-top: 14px;
   margin-bottom: 14px;
@@ -185,7 +244,9 @@ body {
 .advantages {
   counter-set: advantage;
 }
-
+.advantages-description-city, .advantages-description-bridge {
+  color: #FFFFFF;
+}
 .advantage-order::before {
   display: block;
   counter-increment: advantage;
@@ -193,7 +254,7 @@ body {
   order: -1;
 }
 
-.advantages-list, .real-city, .advantages-bridg-about, .container-aboutroad, .container-food-etc {
+.advantages-list, .real-city, .advantages-bridge-about, .container-aboutroad, .container-food-etc {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -242,7 +303,10 @@ body {
   order: -2;
 }
 
-
+.advantages-live {
+  background-image: url('../images/icons/food.svg');
+  background-repeat: no-repeat;
+}
 .hotel-search-title {
   padding-top: 91px;
   font-size: 30px;
@@ -259,6 +323,8 @@ body {
   padding: 12px 15px;
   margin-bottom: 93px;
   min-width: 574px;
+  font-size: 20px;
+  line-height: 36px;
 }
 
 p {
@@ -275,10 +341,20 @@ p {
 }
 
 .subscribe-title {
-  font-size: 30 px;
+  font-size: 30px;
   font-family: "PT Sans Bold";
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 29;
+  line-height: 36px;
 }
 
+.subscribe-description {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 46px;
+}
 .subscribe-button {
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -315,9 +391,22 @@ p {
   list-style: none;
   margin: 0;
   margin-top: 10px;
+  padding-left: 0;
+
 }
 .breadcrumbs-link {
   font-size: 16px;
+}
+
+.breadcrumbs-item {
+  min-width: 37px;
+}
+.breadcrumbs-link-home {
+  background-image: url('../images/icons/home-page.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 13px 13px;
+  width: 37px;
 }
 .catalog-filter-title {
   font-size: 20px;
@@ -477,7 +566,32 @@ p {
   margin: 0;
   padding-left: 0;
 }
+.footer-social-item {
+  width: 48px;
+  height: 40px;
+}
+.footer-social-link {
+  display: block;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+}
 
+.social-link-vk {
+  background-image: url('../images/icons/Social-vk.svg');
+  background-size: 24px 16px;
+}
+
+.social-link-tg {
+  background-image: url('../images/icons/Social-telegram.svg');
+  background-size: 18px 16px;
+}
+
+.social-link-youtube {
+  background-image: url('../images/icons/Social-youtube.svg');
+  background-size: 22px 17px;
+}
 .footer-contacts-phone {
   font-style: normal;
   color: inherit;
