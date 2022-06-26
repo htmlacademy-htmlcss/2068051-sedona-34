@@ -71,7 +71,9 @@ body {
 .button:focus {
   background-color: #615048;
 }
-
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .pagination-button {
   font-family: "PT Sans Bold";
   color: #FFFFFF;
@@ -99,27 +101,46 @@ body {
   background-color: #82B3D3;
 }
 
+.pagination-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .subsidiary-button {
   background-color: #82B3D3;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .subsidiary-button:focus {
   background-color: #68A2CA;
+  box-shadow: none;
 }
 
 .subsidiary-button:hover {
   background-color: #68A2CA;
+  box-shadow: none;
 }
 
+.subsidiary-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 .navigation-button {
   min-width: 160px;
   box-sizing: border-box;
 }
 
-
-
 .active-button {
   background-color: #7DB54F;
+}
+
+.active-button:hover {
+  background-color: #6C9E42;
+}
+
+.active-button:focus {
+  background-color: #6C9E42;
+}
+
+.active-button:active {
+  rgba(255, 255, 255, 0.3)
 }
 
 .not-active-button {
@@ -565,14 +586,12 @@ p {
   padding-bottom: 19px;
   font-size: 18px;
 }
-.footer-social-list {
-  display: flex;
-}
 
 .page-footer {
   display: flex;
   justify-content: space-between;
   padding: 40px 70px 30px;
+  align-items: center;
 }
 
 .footer-social-list {
@@ -584,33 +603,54 @@ p {
 .footer-social-item {
   width: 48px;
   height: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
+
 .footer-social-link {
   display: block;
-  background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-color: #FFFFFF; */
   height: 40px;
+  position: relative;
 }
 
-.social-link-vk {
+.social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+
+.footer-social-link:hover .social-icon {
+  fill: #411e0a;
+}
+
+/* .social-link-vk {
   background-image: url('../images/icons/Social-vk.svg');
   background-size: 24px 16px;
-}
+} */
 
-.social-link-tg {
+/* .social-link-tg {
   background-image: url('../images/icons/Social-telegram.svg');
   background-size: 18px 16px;
-}
+} */
 
-.social-link-youtube {
+/* .social-link-youtube {
   background-image: url('../images/icons/Social-youtube.svg');
   background-size: 22px 17px;
-}
+} */
 .footer-contacts-phone {
   font-style: normal;
   color: inherit;
   font-weight: 400;
   font-size: 40px;
   text-decoration: none;
+}
+
+.html-logo {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
