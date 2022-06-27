@@ -252,6 +252,10 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin-bottom: 31px;
+  margin-left: 290px;
+  margin-right: 290px;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .advantages-about {
@@ -389,6 +393,17 @@ p {
 .footer-contacts-phone {
   font-size: 40px;
 }
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
 
 .filter {
   background-color: #2d1468;
@@ -471,6 +486,7 @@ p {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
+  margin-right: auto;
 }
 .catalog-filter{
   display: flex;
@@ -494,12 +510,47 @@ p {
   padding: 0;
 }
 
+.button-table {
+  background-image: url('../images/icons/view-table.svg');
+}
+
+.button-slide {
+  background-image: url('../images/icons/view-slide.svg');
+}
+
+.button-list {
+  background-image: url('../images/icons/view-list.svg');
+}
+
+.button-select-results {
+  border-color: #E5E5E5;
+  border-style: solid;
+  border-radius: 4px;
+  border-width: 2px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+  margin-left: 8px;
+}
+.button-select-results:hover {
+  border-color: #000000;
+}
+
+.button-select-results:focus {
+  border-color: #68A2CA;
+}
+
 .hotel-card-title {
   font-family: "PT Sans Bold";
   font-size: 24px;
   margin: 0;
 }
 
+.button-select-results:active {
+  border-color: #000000;
+}
 .hotel-card {
   display: grid;
   width: 340px;
@@ -626,6 +677,7 @@ p {
 
 .footer-social-link:hover .social-icon {
   fill: #411e0a;
+  outline: #6C9E42;
 }
 
 /* .social-link-vk {
@@ -653,4 +705,8 @@ p {
 .html-logo {
   margin-top: 8px;
   margin-bottom: 8px;
+}
+
+.html-link:hover .academy-icon {
+  fill: #6C9E42;
 }
