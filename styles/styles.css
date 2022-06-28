@@ -140,7 +140,7 @@ body {
 }
 
 .active-button:active {
-  rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3)
 }
 
 .not-active-button {
@@ -148,6 +148,9 @@ body {
   color: #333333;
 }
 
+.not-active-button:hover, :active, :focus {
+  background-color: #F2F2F2;
+}
 .page-header {
   background-color: #FFFFFF;
   color: #000000;
@@ -329,7 +332,18 @@ body {
 }
 
 .advantages-live {
+  background-image: url('../images/icons/live.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 31px;
+}
+
+.advantages-food {
   background-image: url('../images/icons/food.svg');
+  background-repeat: no-repeat;
+  background-position: 50% 31px;
+}
+.advantages-souvenirs {
+  background-image: url('../images/icons/souvenirs.svg');
   background-repeat: no-repeat;
   background-position: 50% 31px;
 }
@@ -343,6 +357,8 @@ body {
 .hotel-search-description {
   margin-bottom: 56px;
   margin-top: 29px;
+  font-size: 22px;
+  line-height: 26px;
 }
 .hotel-search-button {
   display: inline-block;
@@ -351,6 +367,7 @@ body {
   min-width: 574px;
   font-size: 20px;
   line-height: 36px;
+  box-sizing: border-box;
 }
 
 p {
@@ -510,6 +527,15 @@ p {
   padding: 0;
 }
 
+.select-control {
+  width: 290px;
+  border-color: #E5E5E5;
+  margin-right: 78px;
+}
+
+.select-control-text {
+  font: inherit;
+}
 .button-table {
   background-image: url('../images/icons/view-table.svg');
 }
@@ -577,6 +603,16 @@ p {
   grid-column: 1 / 2;
 }
 
+.rate-view {
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 22px 8px 23px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
 .container-catalog {
   display: flex;
   padding-left: 0;
@@ -621,6 +657,11 @@ p {
   color: #000000;
 }
 
+.show-number {
+  min-width: 160px;
+  border: 2px solid #E5E5E5;
+}
+
 .subscribe-form {
   display: flex;
 }
@@ -631,11 +672,18 @@ p {
   font-family: inherit;
   margin: 0;
   padding: 0;
-  border: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-color: #f2f2f2;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 19px;
   font-size: 18px;
+}
+
+.subscribe-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .page-footer {
