@@ -568,6 +568,43 @@ p {
   padding: 0;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.25); */
+  opacity: 30%;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #f70404;
+  left: 0;
+}
+
+.range-scale .range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
 .select-control {
   width: 290px;
   border-color: #E5E5E5;
@@ -838,6 +875,7 @@ p {
 
 .modal-search {
   width: 715px;
+  border-radius: 30px;
 }
 
 .modal-close-button {
@@ -865,4 +903,21 @@ p {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 63px;
+}
+
+.field {
+  margin: 0;
+  padding: 15px 19px 14px;
+  font: inherit;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  width: 420px;
+}
+
+.field::after {
+  content: url('../images/icons/date.svg');
+  background-repeat: no-repeat;
+  position: absolute;
 }
