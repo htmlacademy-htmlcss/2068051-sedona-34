@@ -87,7 +87,7 @@
                 <span class="control-label">Wi-Fi</span>
               </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group container-type-of-accomodation">
               <legend class="catalog-filter-title">Тип Жилья</legend>
                   <label class="catalog-filter-item control">
                     <input class="control-input visually-hidden" type="radio" name="type-accomodation" value="hotel" checked>
@@ -105,7 +105,7 @@
                     <span class="control-label">Апартаменты</span>
                   </label>
             </fieldset>
-            <fieldset class="catalog-filter-group">
+            <fieldset class="catalog-filter-group container-price">
               <legend class="catalog-filter-title">Стоимость</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
@@ -118,7 +118,7 @@
                 </div>
               </div>
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 140px">
+                  <div class="range-bar" style="left: 0; width: 227px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -127,19 +127,22 @@
                     </button>
                   </div>
                 </div>
-
             </fieldset>
-            <button class="button subsidiary-button" type="submit">Применить</button>
-            <input type="reset" value="Сбросить">
+            <div class="filter-buttons">
+              <button class="button subsidiary-button" type="submit">Применить</button>
+              <input class="reset-button" type="reset" value="Сбросить">
+            </div>
           </form>
         </div>
       </section>
       <section class="catalog">
         <div class="search-results">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
+          <div class="select">
           <select class="select-control" aria-label="Сортировка">
             <option class="select-control-text" value="cheap">Сначала дешевые</option>
           </select>
+        </div>
           <a class="button-table button-select-results" href="#">
             <span class="visually-hidden">Показать карточки</span>
           </a>
@@ -236,12 +239,12 @@
             <a class="pagination-button button" href="#">10</a>
           </li>
         </ul>
-        <div class="quantity-of-results">
-          <span>Гостиниц на странице:</span>
-          <select class="select-number" aria-label="Количество гостиниц">
-          <option class="show-number" value="4">4</option>
-        </select>
-      </div>
+        <div class="select-number">
+          <span class="quantity-of-hotels">Гостиниц на странице:</span>
+           <select class="select-control" aria-label="Количество гостиниц">
+           <option class="show-number" value="4">4</option>
+          </select>
+        </div>
       </div>
       </section>
       <section class="subscribe-catalog">
