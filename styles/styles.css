@@ -520,6 +520,7 @@ p {
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700px;
+  margin-bottom: 30px;
 }
 
 .catalog-filter-group {
@@ -568,20 +569,76 @@ p {
   padding: 0;
 }
 
+.control {
+  position: relative;
+  display: block;
+  padding-left: 41px;
+}
+
+.control-mark {
+  position: absolute;
+  /* top: 2px; */
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.control:hover .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control:focus .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 3px solid #83B3D3;
+}
+
+.control:active .control-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  content: url('../images/icons/checkbox-arrow.svg');
+  bottom: 1px;
+  left: 4px;
+  /* content: ""; */
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+.control-label {
+  line-height: 21px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
 .range-scale {
   position: relative;
   height: 4px;
   margin-top: 32px;
-  background-color: #FFFFFF;
+  background-color: rgba(255,255,255,0.3);
   border-radius: 4px;
   /* box-shadow: rgba(0, 0, 0, 0.25); */
-  opacity: 30%;
+
 }
 
 .range-bar {
   position: absolute;
   height: 4px;
-  background-color: #f70404;
+  background-color: #ffffff;
   left: 0;
 }
 
@@ -605,6 +662,31 @@ p {
   right: -10px;
 }
 
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin-right: 5px;
+}
+.range-input {
+  width: 30px;
+  padding: 0 2px;
+  font: inherit;
+  color: #FFFFFF;
+  text-align: center;
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  appearance: textfield;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 .select-control {
   width: 290px;
   border-color: #E5E5E5;
