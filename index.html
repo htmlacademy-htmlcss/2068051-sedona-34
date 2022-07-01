@@ -197,23 +197,38 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="date-of-travel" class="modal-input-title">Дата заезда:</label>
             <input class="date-start-field modal-field" type="text" id="date-of-travel" name="date-of-travel" placeholder="27 апреля 2020">
-          <p class="error-form">Мы не можем отправить вас в прошлое.</p>
+          <p class="results-form error-form">Мы не можем отправить вас в прошлое.</p>
           <label for="end-of-travel" class="modal-input-title">Дата выезда:</label>
             <input class="end-start-field modal-field" type="text" id="end-of-travel" name="date-of-travel" placeholder="1 сентября 2021">
-          <p class="form-date-results">На эти даты есть свободные номера. Пока есть.</p>
-        </form>
-        <div class="quantity-of-adults">
-          <label for="number-of-adults" class="modal-input-title">Взрослые</label>
+          <p class="results-form">На эти даты есть свободные номера. Пока есть.</p>
+        <!-- <div class="quantity-of-adults"> -->
+          <label for="number-of-adults" class="modal-input-title modal-input-title">Взрослые:</label>
           <div class="wrap-for-select">
-          <button class="button-min">
-            <span class="visually-hidden">Минус</span>
-          </button>
-          <input class="select-the-adults" type="text" id="number-of-adults" name="number-of-adults" value="2">
-          <button class="button-plus">
-            <span class="visually-hidden">Плюс</span>
+            <button class="button-min button">
+              <span class="visually-hidden">Минус</span>
+            </button>
+            <input class="select-the-adults" type="text" id="number-of-adults" name="number-of-adults" value="2">
+            <button class="button-plus button">
+              <span class="visually-hidden">Плюс</span>
+            </button>
           </div>
+        <!-- </div> -->
+          <!-- <div class="quantity-of-children"> -->
+            <label for="number-of-adults" class="modal-input-title">Дети:</label>
+            <div class="wrap-for-select">
+              <button class="button-min button">
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="select-the-adults" type="text" id="number-of-adults" name="number-of-adults" value="1">
+              <button class="button-plus button">
+                <span class="visually-hidden">Плюс</span>
+              </button>
+            </div>
+          <!-- </div> -->
+          <button class="button subsidiary-button modal-button" type="submit">Найти</button>
           </button>
         </div>
+      </form>
       </section>
     </div>
   </div>

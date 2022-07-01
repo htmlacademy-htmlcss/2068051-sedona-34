@@ -1001,6 +1001,7 @@ p {
 /* Модальное окно */
 .modal-container {
   position: fixed;
+  width: 575px;
   top: 0;
   left: 0;
   display: flex;
@@ -1019,6 +1020,14 @@ p {
 .modal-search {
   width: 715px;
   border-radius: 30px;
+}
+
+.search-form {
+  display: grid;
+  width: 575px;
+  grid-template-columns: 155px 133px 287px;
+  text-align: left;
+  gap: 11px;
 }
 
 .modal-close-button {
@@ -1058,6 +1067,26 @@ p {
   margin-bottom: 63px;
 }
 
+.modal-input-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  grid-column: 1 / 2;
+}
+
+.results-form {
+  margin: 0;
+  grid-column: 2 / -1;
+}
+.quantity-of-adults {
+  grid-column: 1 / 3;
+}
+.quantity-of-children {
+  grid-column: 3 / -1;
+}
+.error-form {
+  color: #FF5757;
+}
 .modal-field {
   margin: 0;
   padding: 15px 19px 14px;
@@ -1072,12 +1101,14 @@ p {
   appearance: none;
 }
 
-.quantity-of-adults {
+.quantity-of-adults,
+.quantity-of-children {
   display: flex;
 }
 
 .wrap-for-select {
   width: 133px;
+  height: 50px;
   display: flex;
   background-color: #F2F2F2;
   border: none;
@@ -1104,16 +1135,31 @@ p {
 .button-min,
 .button-plus {
   display: block;
-  width: 15px;
-  height: 15px;
-  padding-left: 19mm;
+  width: 45px;
+  height: 50px;
   border: none;
   position: relative;
+  background-color: transparent;
 }
 
 .button-min::before {
   position: absolute;
-  background-image: url("../images/icons/minus.svg");
-  background-repeat: no-repeat;
-  content: "";
+  width: 13px;
+  height: 13px;
+  top: 10px;
+  content: url("../images/icons/minus.svg");
+}
+
+.button-plus::before {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  bottom: 20px;
+  left: 10px;
+  content: url("../images/icons/plus.svg");
+}
+
+.modal-button {
+  margin-top: 40px;
+  grid-column: 1 / -1;
 }
