@@ -70,7 +70,7 @@
           <h2 class="visually-hidden">Фильтры гостиниц</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group container-infrastructure">
-              <legend class="catalog-filter-title">Инфраструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <label class="control catalog-filter-item">
                 <input class="control-input visually-hidden" type="checkbox" name="waterpool" checked>
                 <span class="control-mark"></span>
@@ -88,7 +88,7 @@
               </label>
             </fieldset>
             <fieldset class="catalog-filter-group container-type-of-accomodation">
-              <legend class="catalog-filter-title">Тип Жилья</legend>
+              <legend class="catalog-filter-title">Тип Жилья:</legend>
                   <label class="catalog-filter-item control">
                     <input class="control-input visually-hidden" type="radio" name="type-accomodation" value="hotel" checked>
                     <span class="control-mark"></span>
@@ -106,14 +106,14 @@
                   </label>
             </fieldset>
             <fieldset class="catalog-filter-group container-price">
-              <legend class="catalog-filter-title">Стоимость</legend>
+              <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
                   <label class="catalog-filter-label">
-                    от <input class="range-input" type="number" value="0" name="min-price">
+                     <input class="range-input" type="number" value="0" name="min-price" placeholder="от">
                   </label>
                   <label class="catalog-filter-label">
-                    до <input class="range-input" type="number" value="9000" name="max-price" style="width: 37px">
+                     <input class="range-input" type="number" value="9000" name="max-price" placeholder="до">
                   </label>
                 </div>
               </div>
@@ -241,7 +241,7 @@
         </ul>
         <div class="select-number">
           <span class="quantity-of-hotels">Гостиниц на странице:</span>
-           <select class="select-control" aria-label="Количество гостиниц">
+           <select class="select-control choose-the-number" aria-label="Количество гостиниц">
            <option class="show-number" value="4">4</option>
           </select>
         </div>

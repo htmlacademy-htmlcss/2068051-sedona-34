@@ -658,7 +658,7 @@ p {
 
 .toggle-min {
   top: -8px;
-  left: -10px;
+  left: 0px;
 }
 
 .toggle-max {
@@ -669,21 +669,25 @@ p {
 .range-wrapper-inputs {
   display: flex;
   justify-content: center;
+  width: 288px;
 }
 
 .catalog-filter-label {
-  display: flex;
-  margin-right: 5px;
+  width: 144px;
 }
+
 .range-input {
-  width: 30px;
-  padding: 0 2px;
+  /* width: 30px; */
+  padding: 12px 15px 15px 19px;
+  width: 146px;
   font: inherit;
   color: #FFFFFF;
-  text-align: center;
+  text-align: left;
   border: 2px solid #FFFFFF;
+  border-radius: 4px;
   background-color: transparent;
-  appearance: textfield;
+  /* appearance: textfield; */
+  box-sizing: border-box;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -718,8 +722,9 @@ p {
   justify-content: space-between;
 }
 
+
 .select-control {
-  width: 160px;
+  width: 100%;
   padding: 14px 20px;
   padding-right: 50px;
   font: inherit;
@@ -730,6 +735,10 @@ p {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+}
+
+.choose-the-number {
+  width: 160px;
 }
 
 .select-control:hover,
@@ -1056,10 +1065,40 @@ p {
   border: none;
   border-radius: 4px;
   width: 420px;
+  background-image: url("../images/icons/date.svg");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+  appearance: none;
 }
 
-.field::after {
+/* input::-webkit-calendar-picker-indicator{
+  display: none;
+} */
+
+/* .field::after {
   content: url('../images/icons/date.svg');
   background-repeat: no-repeat;
   position: absolute;
+} */
+
+/* .select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 290px;
+  margin-right: auto;
 }
+
+.select-control {
+  width: 100%;
+  padding: 14px 20px;
+  padding-right: 50px;
+  font: inherit;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url("../images/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+} */
