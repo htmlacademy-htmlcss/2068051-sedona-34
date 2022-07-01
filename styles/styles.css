@@ -705,6 +705,7 @@ p {
   background: transparent;
   border: none;
   font: inherit;
+  color: #FFFFFF;
 }
 .select {
   position: relative;
@@ -1057,7 +1058,7 @@ p {
   margin-bottom: 63px;
 }
 
-.field {
+.modal-field {
   margin: 0;
   padding: 15px 19px 14px;
   font: inherit;
@@ -1071,34 +1072,48 @@ p {
   appearance: none;
 }
 
-/* input::-webkit-calendar-picker-indicator{
-  display: none;
-} */
-
-/* .field::after {
-  content: url('../images/icons/date.svg');
-  background-repeat: no-repeat;
-  position: absolute;
-} */
-
-/* .select {
-  position: relative;
+.quantity-of-adults {
   display: flex;
-  align-items: center;
-  width: 290px;
-  margin-right: auto;
 }
 
-.select-control {
-  width: 100%;
-  padding: 14px 20px;
-  padding-right: 50px;
-  font: inherit;
-  background-color: #ffffff;
-  border: 2px solid #E5E5E5;
-  border-radius: 4px;
-  background-image: url("../images/icons/select-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 16px center;
+.wrap-for-select {
+  width: 133px;
+  display: flex;
+  background-color: #F2F2F2;
+  border: none;
   appearance: none;
-} */
+  border-radius: 4px;
+}
+
+.modal-field::placeholder {
+  font: inherit;
+  color: #000000;
+}
+.select-the-adults {
+  width: 43px;
+  font: inherit;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+
+}
+
+.button-min,
+.button-plus {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding-left: 19mm;
+  border: none;
+  position: relative;
+}
+
+.button-min::before {
+  position: absolute;
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  content: "";
+}
