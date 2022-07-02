@@ -635,6 +635,10 @@ p {
   border-radius: 50%;
   content: "";
 }
+
+.control:focus .control-radio {
+  border: 3px solid #83B3D3;
+}
 .control-label {
   line-height: 21px;
 }
@@ -698,10 +702,20 @@ p {
   color: #FFFFFF;
   text-align: left;
   border: 2px solid #FFFFFF;
-  border-radius: 4px;
   background-color: transparent;
   /* appearance: textfield; */
   box-sizing: border-box;
+}
+
+.range-input:hover {
+
+}
+.filter-min-price {
+  border-radius: 4px 0px 0px 4px;
+}
+
+.filter-max-price {
+  border-radius: 0px 4px 4px 0px;
 }
 .label-min-price {
   position: relative;
