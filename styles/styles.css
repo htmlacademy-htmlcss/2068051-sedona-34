@@ -99,12 +99,9 @@ body {
   border: 0;
 }
 
-.pagination-button:hover {
-  background-color: #82B3D3;
-}
-
+.pagination-button:hover,
 .pagination-button:focus {
-  background-color: #82B3D3;
+  background-color: #68A2CA;
 }
 
 .pagination-button:active {
@@ -231,6 +228,23 @@ body {
   height: 66px;
   margin-right: 20px;
   padding: 0;
+  position: relative;
+}
+
+.favorite-number {
+  position: absolute;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: -0.1em;
+  color: #FFFFFF;
+  width: 20px;
+  height: 20px;
+  bottom: 30px;
+  left: 26px;
+  padding-top: 3px;
+  border-radius: 50%;
+  background-color: #7DB54F;
+  box-sizing: border-box;
 }
 .navigation-button {
   margin-top: 14px;
@@ -689,7 +703,14 @@ p {
   /* appearance: textfield; */
   box-sizing: border-box;
 }
-
+.label-min-price {
+  position: relative;
+}
+.filter-min-price::after {
+  /* position: absolute; */
+  font-size: 40px;
+  content: "от";
+}
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -700,6 +721,13 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.form-button {
+  width: 160px;
+  border: none;
+  margin-bottom: 20px;
+  padding: 14px 15px;
 }
 .reset-button {
   background: transparent;
@@ -1001,7 +1029,6 @@ p {
 /* Модальное окно */
 .modal-container {
   position: fixed;
-  width: 575px;
   top: 0;
   left: 0;
   display: flex;
@@ -1020,12 +1047,13 @@ p {
 .modal-search {
   width: 715px;
   border-radius: 30px;
+  box-sizing: border-box;
 }
 
 .search-form {
   display: grid;
   width: 575px;
-  grid-template-columns: 155px 133px 287px;
+  grid-template-columns: 144px 133px 287px;
   text-align: left;
   gap: 11px;
 }
@@ -1098,6 +1126,7 @@ p {
   background-image: url("../images/icons/date.svg");
   background-repeat: no-repeat;
   background-position: right 19px center;
+  box-sizing: border-box;
   appearance: none;
 }
 
@@ -1161,5 +1190,6 @@ p {
 
 .modal-button {
   margin-top: 40px;
+  border: none;
   grid-column: 1 / -1;
 }
