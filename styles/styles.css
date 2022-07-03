@@ -1298,13 +1298,27 @@ outline: none;
   display: block;
   width: 256px;
   position: absolute;
-  bottom: 100%;
+  bottom: 400%;
   margin-bottom: 6px;
-  left: 50%;
+  left: -400%;
   transform: translateX(-50%);
   transform: translateY(120%);
   z-index: 1;
   display: none;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.tooltip-text::before {
+  position: absolute;
+  left: 110px;
+  top: -10px;
+  width:0px;
+  height:0px;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #333;
+  content: ""
 }
 
 .tooltip-toggle:hover + .tooltip-text,
