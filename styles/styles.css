@@ -8,7 +8,7 @@ font-display: swap;
 
 
 @font-face {
-font-family: "PT Sans Bold";
+font-family: "PT Sans";
 font-style: normal;
 font-weight: 700;
 src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -57,9 +57,10 @@ body {
 }
 
 .button {
-  font-family: "PT Sans Bold";
+  font-family: "PT Sans";
   display: inline-block;
   font-size: 16px;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
   background-color: #756157;
@@ -81,7 +82,7 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 .pagination-button {
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   color: #FFFFFF;
   width: 60px;
   /* height: 60px; */
@@ -195,7 +196,7 @@ body {
 .navigation-link {
   display: block;
   padding: 20px 17px;
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   font-size: 20px;
   background-color: #FFFFFF;
   text-align: center;
@@ -296,6 +297,7 @@ body {
   order: 1;
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 31px;
   margin-top: 63px;
@@ -311,6 +313,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 90px;
+  margin-top: 0;
 }
 
 .advantages {
@@ -371,7 +374,7 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   /* order: -2; */
   margin-bottom: 30px;
 }
@@ -409,15 +412,16 @@ body {
   top: 20%;
 }
 .hotel-search-title {
-  padding-top: 91px;
+  margin-top: 91px;
   font-size: 30px;
-  font-family: "PT Sans Bold";
+  line-height: 31px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .hotel-search-description {
   margin-bottom: 56px;
-  margin-top: 29px;
+  margin-top: 32px;
   font-size: 22px;
   line-height: 26px;
 }
@@ -446,10 +450,10 @@ p {
 
 .subscribe-title {
   font-size: 30px;
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 29;
+  margin-bottom: 29px;
   line-height: 36px;
 }
 
@@ -495,7 +499,7 @@ p {
 
 .filter-header-title {
   color: #FFFFFF;
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
@@ -565,7 +569,7 @@ p {
 }
 
 .catalog-title {
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -892,7 +896,7 @@ outline: none;
 }
 
 .hotel-card-title {
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   font-size: 24px;
   margin: 0;
 }
@@ -964,7 +968,7 @@ outline: none;
 
 }
 .pagination-link {
-  font-family: "PT Sans Bold";
+  font-weight: 700;
   font-size: 20px;
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -995,16 +999,21 @@ outline: none;
   font-family: inherit;
   margin: 0;
   padding: 0;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   border: none;
   padding-left: 22px;
   padding-top: 20px;
   padding-bottom: 19px;
   font-size: 18px;
+  line-height: 21px;
+  box-sizing: border-box;
 }
 
 .subscribe-button {
+  width: 200px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
