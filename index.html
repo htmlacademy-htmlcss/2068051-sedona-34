@@ -185,19 +185,23 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="date-of-travel" class="modal-input-title">Дата заезда:</label>
-            <input class="date-start-field modal-field" type="text" id="date-of-travel" name="date-of-travel" placeholder="27 апреля 2020">
-          <p class="results-form error-form">Мы не можем отправить вас в прошлое.</p>
+            <div class="wrap-date">
+              <input class="date-start-field modal-field" type="text" id="date-of-travel" name="date-of-travel" placeholder="27 апреля 2020">
+              <p class="results-form error-form">Мы не можем отправить вас в прошлое.</p>
+            </div>
           <label for="end-of-travel" class="modal-input-title">Дата выезда:</label>
+          <div class="wrap-date">
             <input class="end-start-field modal-field" type="text" id="end-of-travel" name="date-of-travel" placeholder="1 сентября 2021">
-          <p class="results-form">На эти даты есть свободные номера. Пока есть.</p>
-        <div class="quantity-of-adults">
+            <p class="results-form">На эти даты есть свободные номера. Пока есть.</p>
+          </div>
+          <div class="quantity-of-adults">
           <label for="number-of-adults" class="modal-input-title modal-input-title">Взрослые:</label>
           <div class="wrap-for-select">
-            <button class="button-min button">
+            <button class="button-min button-modal button">
               <span class="visually-hidden">Минус</span>
             </button>
             <input class="select-the-adults" type="text" id="number-of-adults" name="number-of-adults" value="2">
-            <button class="button-plus button">
+            <button class="button-plus button-modal button">
               <span class="visually-hidden">Плюс</span>
             </button>
           </div>
@@ -213,7 +217,7 @@
                 </button>
                 <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </span>
-            </span>
+             </span>
             <div class="wrap-for-select">
               <button class="button-min button">
                 <span class="visually-hidden">Минус</span>

@@ -1108,6 +1108,7 @@ outline: none;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+  display: none;
 }
 
 .modal {
@@ -1128,9 +1129,10 @@ outline: none;
 .search-form {
   display: grid;
   width: 575px;
-  grid-template-columns: 144px 133px 287px;
+  grid-template-columns: 144px 179px 230px;
   text-align: left;
   gap: 11px;
+  align-items: center;
 }
 
 .modal-close-button {
@@ -1177,11 +1179,17 @@ outline: none;
   grid-column: 1 / 2;
 }
 
-.results-form {
-  margin: 0;
+.wrap-date {
   grid-column: 2 / -1;
 }
+
+.results-form {
+  margin: 0;
+  font-size: 16px;
+  line-height: 29px;
+}
 .quantity-of-adults {
+  width: 288px;
   grid-column: 1 / 3;
 }
 .quantity-of-children {
@@ -1190,6 +1198,7 @@ outline: none;
 .error-form {
   color: #FF5757;
 }
+
 .modal-field {
   margin: 0;
   padding: 15px 19px 14px;
@@ -1208,8 +1217,13 @@ outline: none;
 .quantity-of-adults,
 .quantity-of-children {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* .number-of-adults {
+  margin-right: 64px;
+} */
 .wrap-for-select {
   width: 133px;
   height: 50px;
@@ -1243,7 +1257,7 @@ outline: none;
   height: 50px;
   border: none;
   position: relative;
-  background-color: transparent;
+  background-color: #F2F2F2;;
 }
 
 .button-min::before {
@@ -1252,6 +1266,7 @@ outline: none;
   height: 13px;
   top: 10px;
   content: url("../images/icons/minus.svg");
+  opacity: 30%;
 }
 
 .button-plus::before {
@@ -1261,12 +1276,25 @@ outline: none;
   bottom: 20px;
   left: 10px;
   content: url("../images/icons/plus.svg");
+  opacity: 30%;
+}
+
+.button-minus:hover::before {
+  background-color: #F2F2F2;
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.button-plus:hover::before {
+  background-color: #F2F2F2;
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .tooltip {
   position: absolute;
   margin-top: 2px;
-  margin-left: 12px;
+  margin-left: 8px;
   width: 25px;
   height: 25px;
 }
@@ -1298,9 +1326,9 @@ outline: none;
   display: block;
   width: 256px;
   position: absolute;
-  bottom: 400%;
+  bottom: 600%;
   margin-bottom: 6px;
-  left: -400%;
+  left: -450%;
   transform: translateX(-50%);
   transform: translateY(120%);
   z-index: 1;
@@ -1327,7 +1355,11 @@ outline: none;
 }
 
 .modal-button {
-  margin-top: 40px;
+  margin-top: 29px;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  padding: 12px 26px;
   border: none;
   grid-column: 1 / -1;
 }
