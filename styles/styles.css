@@ -150,7 +150,9 @@ body {
   color: #333333;
 }
 
-.not-active-button:hover, .not-active-button:active, :focus {
+.not-active-button:hover,
+.not-active-button:active,
+.not-active-button:focus {
   background-color: #F2F2F2;
 }
 .page-header {
@@ -370,14 +372,16 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   font-family: "PT Sans Bold";
-  order: -2;
+  /* order: -2; */
   margin-bottom: 30px;
 }
 
 .advatages-discription {
   margin-top: 0;
 }
-.advantages-live {
+.advantages-live,
+.advantages-food,
+.advantages-souvenirs {
   /* background-image: url('../images/icons/live.svg');
   background-repeat: no-repeat;
   background-position: 50% 31px; */
@@ -392,15 +396,17 @@ body {
   top: 20%;
 
 }
-.advantages-food {
-  background-image: url('../images/icons/food.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 31px;
+.advantages-food::before {
+  position: absolute;
+  content: url('../images/icons/food.svg');
+  left: 40%;
+  top: 20%;
 }
-.advantages-souvenirs {
-  background-image: url('../images/icons/souvenirs.svg');
-  background-repeat: no-repeat;
-  background-position: 50% 31px;
+.advantages-souvenirs::before {
+  position: absolute;
+  content: url('../images/icons/souvenirs.svg');
+  left: 40%;
+  top: 20%;
 }
 .hotel-search-title {
   padding-top: 91px;
@@ -531,6 +537,11 @@ p {
   margin-right: 10px;
   display: inline-block;
 }
+
+/* .breadcrumbs:hover li {
+  opacity: 0,1;
+} */
+
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700px;
@@ -602,16 +613,16 @@ p {
   border-radius: 4px;
 }
 
-.control:hover .control-mark {
+.control:hover .control-checkbox {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.control:focus .control-mark {
+.control-input:focus ~ .control-checkbox{
   background-color: rgba(255, 255, 255, 0.6);
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
-.control:active .control-mark {
+.control:active .control-checkbox {
   background-color: rgba(255, 255, 255, 0.3);
 }
 .control-input[type="checkbox"]:checked + .control-mark::after {
@@ -636,9 +647,14 @@ p {
   content: "";
 }
 
-.control:focus .control-radio {
+.control-input:focus ~ .control-radio {
   border: 3px solid #83B3D3;
 }
+
+.control-input:focus ~ .control-radio:not(checked) {
+  border: 3px solid #83B3D3;
+}
+
 .control-label {
   line-height: 21px;
 }
@@ -672,6 +688,22 @@ p {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  outline: none;
+  width: 26px;
+  height: 26px;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  outline: none;
+  width: 24px;
+  height: 24px;
 }
 
 .toggle-min {
@@ -708,8 +740,20 @@ p {
 }
 
 .range-input:hover {
-
+  border: 2px solid rgba(255, 255, 255, 0.6);
 }
+
+
+.range-input:focus {
+  box-shadow: 0px 0px 0px 3px #81B3D2;
+  outline-color: #81B3D2;
+}
+.range-input:active {
+  background-color: #756257;
+  box-shadow: none;
+  outline: none;
+}
+
 .filter-min-price {
   border-radius: 4px 0px 0px 4px;
 }
@@ -749,6 +793,21 @@ p {
   font: inherit;
   color: #FFFFFF;
 }
+
+.reset-button:hover {
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+border: 3px solid #83B3D3;
+border-radius: 4px;
+outline: none;
+}
+
+.reset-button: {
+  opacity: 0.3;
+}
+
 .select {
   position: relative;
   display: flex;
@@ -1062,6 +1121,8 @@ p {
   width: 715px;
   border-radius: 30px;
   box-sizing: border-box;
+  max-height: 100%;
+  overflow-y: scroll;
 }
 
 .search-form {
@@ -1200,6 +1261,55 @@ p {
   bottom: 20px;
   left: 10px;
   content: url("../images/icons/plus.svg");
+}
+
+.tooltip {
+  position: absolute;
+  margin-top: 2px;
+  margin-left: 12px;
+  width: 25px;
+  height: 25px;
+}
+
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.tooltip-icon {
+  fill: #83B3D3;
+}
+.tooltip-toggle:hover .tooltip-icon {
+  fill: #68A2CA;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: block;
+  width: 256px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(120%);
+  z-index: 1;
+  display: none;
+}
+
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
 }
 
 .modal-button {
