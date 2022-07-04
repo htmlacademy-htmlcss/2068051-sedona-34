@@ -169,6 +169,7 @@ body {
   margin-right: 30px;
   margin-left: 70px;
   margin-bottom: -10px;
+  z-index: 2;
 }
 .navigation-list {
   display: flex;
@@ -471,6 +472,7 @@ p {
 
 .footer-contacts {
   font-style: normal;
+  padding-top: 3px;
 }
 
 .footer-contacts-phone {
@@ -1038,7 +1040,6 @@ outline: none;
 .footer-social-item {
   width: 48px;
   height: 40px;
-  margin-top: 5px;
   margin-bottom: 5px;
 }
 
