@@ -377,6 +377,7 @@ body {
   font-weight: 700;
   order: -2;
   margin-bottom: 30px;
+  margin-top: 0;
 }
 
 .advatages-discription {
@@ -562,9 +563,11 @@ p {
 .search-results {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-left: 0;
   margin-right: 71px;
   width: 1057px;
+  margin-bottom: 58px;
 
 }
 
@@ -593,6 +596,7 @@ p {
   flex-direction: column;
   text-align: left;
   padding: 0;
+  margin-left: 0;
 }
 
 .catalog-filter-list {
@@ -1021,7 +1025,7 @@ outline: none;
 .page-footer {
   display: flex;
   justify-content: space-between;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   align-items: center;
 }
 
