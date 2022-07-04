@@ -218,7 +218,7 @@ body {
 .button-search {
   background-image: url('../images/icons/search.svg');
   background-repeat: no-repeat;
-  background-position: center top 23px;
+  background-position: left 18px top 23px;
   width: 45px;
   height: 66px;
   padding: 0;
@@ -375,7 +375,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   font-weight: 700;
-  /* order: -2; */
+  order: -2;
   margin-bottom: 30px;
 }
 
