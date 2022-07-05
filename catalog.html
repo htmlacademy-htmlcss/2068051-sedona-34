@@ -96,8 +96,8 @@
                     <span class="control-mark control-radio"></span>
                     <span class="control-label">Мотель</span>
                   </label>
-                  <label class="control catalog-filter-item">
-                    <input class="control-input visually-hidden" type="radio" name="type-accomodation" value="apartments">
+                  <label class="control catalog-filter-item" tabindex="0">
+                    <input class="control-input visually-hidden" type="radio" name="type-accomodation" value="apartments" tabindex="-1">
                     <span class="control-mark control-radio"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -109,7 +109,7 @@
                   <label class="catalog-filter-label label-min-price">
                      <input class="range-input filter-min-price" type="number" value="0" name="min-price" placeholder="от">
                   </label>
-                  <label class="catalog-filter-label">
+                  <label class="catalog-filter-label label-max-price">
                      <input class="range-input filter-max-price" type="number" value="9000" name="max-price" placeholder="до">
                   </label>
                 </div>
@@ -136,16 +136,16 @@
         <div class="search-results">
           <h2 class="catalog-title">Найдено гостиниц: 38</h2>
           <div class="select">
-          <select class="select-control" aria-label="Сортировка">
+            <select class="select-control" aria-label="Сортировка">
             <option class="select-control-text" value="cheap">Сначала дешевые</option>
-          </select>
-        </div>
+            </select>
+          </div>
           <a class="button-table button-select-results" href="#">
             <span class="visually-hidden">Показать карточки</span>
-          </a>
+            </a>
           <a class="button-slide button-select-results" href="#">
             <span class="visually-hidden">Показать одну карточку</span>
-          </a>
+            </a>
           <a class="button-list button-select-results" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
@@ -163,7 +163,13 @@
             <span>От 4000 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
             <a class="subsidiary-button button" href="#">в избранное</a>
-            <span class="stars4">4 звезды</span>
+            <!-- <span class="stars4">4 звезды</span> -->
+            <ul class="list-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+            </ul>
             <span class="rate-view">Рейтинг: 8,5</span>
           </li>
           <li class="hotel-card">
@@ -178,7 +184,12 @@
             <span>От 5000 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
             <a class="active-button button" href="#">в избранном</a>
-            <span class="stars4">4 звезды</span>
+            <ul class="list-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+            </ul>
             <span class="rate-view">Рейтинг: 9,2</span>
           </li>
           <li class="hotel-card">
@@ -193,7 +204,11 @@
             <span>От 2500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
             <a class="subsidiary-button button" href="#">в избранное</a>
-            <span class="stars3">3 звезды</span>
+            <ul class="list-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+              <li class="star"></li>
+            </ul>
             <span class="rate-view">Рейтинг: 6,9</span>
           </li>
           <li class="hotel-card">
@@ -208,7 +223,10 @@
             <span>От 1500 ₽</span>
             <a class="hotel-card-button button" href="#">Подробнее</a>
             <a class="subsidiary-button button" href="#">в избранное</a>
-            <span class="stars2">2 звезды</span>
+            <ul class="list-stars">
+              <li class="star"></li>
+              <li class="star"></li>
+            </ul>
             <span class="rate-view">Рейтинг: 5</span>
           </li>
         </ul>
