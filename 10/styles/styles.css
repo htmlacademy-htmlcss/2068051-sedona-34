@@ -209,11 +209,12 @@ body {
 .navigation-link-current::before {
   position: absolute;
   right: 17px;
-  bottom: -2px;
+  bottom: -3px;
   left: 17px;
   height: 2px;
   background-color: #756257;
   content: "";
+  z-index: 2;
 }
 
 .button-search {
@@ -397,22 +398,36 @@ body {
 .advantages-live::before {
   position: absolute;
   left: 40%;
-  content: url('../images/icons/live.svg');
+  background-image: url('../images/icons/live.svg');
+  background-repeat: no-repeat;
   top: 20%;
-
+  width: 75px;
+  height: 75px;
+  content: "";
 }
+
 .advantages-food::before {
   position: absolute;
-  content: url('../images/icons/food.svg');
   left: 40%;
+  background-image: url('../images/icons/food.svg');
+  background-repeat: no-repeat;
   top: 20%;
+  width: 75px;
+  height: 75px;
+  content: "";
 }
+
 .advantages-souvenirs::before {
   position: absolute;
-  content: url('../images/icons/souvenirs.svg');
   left: 40%;
+  background-image: url('../images/icons/souvenirs.svg');
+  background-repeat: no-repeat;
   top: 20%;
+  width: 75px;
+  height: 75px;
+  content: "";
 }
+
 .hotel-search-title {
   margin-top: 91px;
   font-size: 30px;
@@ -658,12 +673,12 @@ p {
 }
 
 .control-input:focus ~ .control-radio {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
-.control-input:focus ~ .control-radio:not(checked) {
+/* .control-input:focus ~ .control-radio:not(checked) {
   border: 3px solid #83B3D3;
-}
+} */
 
 .control-label {
   line-height: 21px;
@@ -774,11 +789,30 @@ p {
 .label-min-price {
   position: relative;
 }
-.filter-min-price::after {
-  /* position: absolute; */
-  font-size: 40px;
+.label-min-price::after {
+  position: absolute;
+  display: block;
+  font-size: 18px;
   content: "от";
+  width: 15px;
+  height: 15px;
+  right: 20px;
+  top: 13px;
+  opacity: 0.3;
 }
+
+.label-max-price::after {
+  position: absolute;
+  display: block;
+  font-size: 18px;
+  content: "до";
+  width: 15px;
+  height: 15px;
+  right: 20px;
+  top: 13px;
+  opacity: 0.3;
+}
+
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
   appearance: none;
@@ -935,7 +969,17 @@ outline: none;
 .hotel-card-type {
   grid-column: 1 / 2;
 }
-
+.list-stars {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.star {
+  background-image: url(../images/icons/star.svg);
+  width: 18px;
+  height: 17px;
+  margin-right: 6px;
+}
 .rate-view {
   background-color: #F2F2F2;
   border-radius: 4px;
@@ -1271,14 +1315,15 @@ outline: none;
   height: 50px;
   border: none;
   position: relative;
-  background-color: #F2F2F2;;
+  background-color: #F2F2F2;
+  cursor: pointer;
 }
 
 .button-min::before {
   position: absolute;
   width: 13px;
   height: 13px;
-  top: 10px;
+  top: 14px;
   content: url("../images/icons/minus.svg");
   opacity: 30%;
 }
@@ -1293,7 +1338,7 @@ outline: none;
   opacity: 30%;
 }
 
-.button-minus:hover::before {
+.button-min:hover::before {
   background-color: #F2F2F2;
   opacity: 100%;
   cursor: pointer;
