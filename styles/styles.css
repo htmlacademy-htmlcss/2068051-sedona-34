@@ -323,6 +323,11 @@ body {
 }
 .advantages-description-city, .advantages-description-bridge {
   color: #FFFFFF;
+  margin-top: 29px;
+}
+
+.advantages-description {
+  margin-top: 30px;
 }
 .advantage-order::before {
   display: block;
@@ -338,6 +343,13 @@ body {
   list-style-type: none;
   padding: 0;
   flex-basis: 100%;
+}
+
+.advantage-order,
+.bridge-about  {
+  padding-top: 92px;
+  padding-bottom: 74px;
+  box-sizing: border-box;
 }
 
 .advantages-picture-bridge {
@@ -385,6 +397,9 @@ body {
 .advatages-discription {
   margin-top: 0;
 }
+/* .advantages-title-live {
+  margin-top: 182px;
+} */
 .advantages-live,
 .advantages-food,
 .advantages-souvenirs {
@@ -566,7 +581,8 @@ p {
 
 .catalog-filter-title {
   font-size: 20px;
-  font-weight: 700px;
+  font-weight: 700;
+  line-height: 26px;
   margin-bottom: 30px;
 }
 
@@ -584,7 +600,7 @@ p {
   margin-left: 0;
   margin-right: 71px;
   width: 1057px;
-  margin-bottom: 58px;
+  margin-bottom: 56px;
 
 }
 
@@ -594,11 +610,11 @@ p {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-right: auto;
+  margin-right: 191px;
 }
 .catalog-filter{
   display: flex;
-  margin-top: 40px;
+  margin-top: 37px;
 }
 
 .container-infrastructure,
@@ -606,7 +622,7 @@ p {
   margin-right: 70px;
 }
 .container-type-of-accomodation {
-  margin-right: 167px;
+  margin-right: 174px;
 }
 .catalog-filter-group {
   display: flex;
@@ -625,7 +641,7 @@ p {
 .control {
   position: relative;
   display: block;
-  padding-left: 41px;
+  padding-left: 39px;
 }
 
 .control-mark {
@@ -753,8 +769,8 @@ p {
 
 .range-input {
   /* width: 30px; */
-  padding: 12px 15px 15px 19px;
-  width: 146px;
+  padding: 12px 15px 12px 19px;
+  width: 145px;
   font: inherit;
   color: #FFFFFF;
   text-align: left;
@@ -789,6 +805,11 @@ p {
 .label-min-price {
   position: relative;
 }
+
+.label-max-price {
+  position: relative;
+}
+
 .label-min-price::after {
   position: absolute;
   display: block;
@@ -973,6 +994,7 @@ outline: none;
   display: flex;
   list-style: none;
   padding-left: 0;
+  align-items: center;
 }
 .star {
   background-image: url(../images/icons/star.svg);
