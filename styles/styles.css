@@ -60,6 +60,7 @@ body {
   font-family: "PT Sans";
   display: inline-block;
   font-size: 16px;
+  line-height: 20px;
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
@@ -970,6 +971,7 @@ outline: none;
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
+  line-height: 28px;
   margin: 0;
 }
 
@@ -990,7 +992,9 @@ outline: none;
 .hotel-card:nth-child(3) {
   margin-right: 0;
 }
-
+.hotel-card-image-link {
+  height: 211px;
+}
 .hotel-card-title-link {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
