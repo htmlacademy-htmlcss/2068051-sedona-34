@@ -585,9 +585,14 @@ body {
 .breadcrumbs-current {
   margin-left: 10px;
 }
-/* .breadcrumbs:hover li {
-  opacity: 0,1;
-} */
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+  opacity: 0,3;
+}
 
 .catalog-filter-title {
   font-size: 20px;
@@ -1217,6 +1222,7 @@ outline: none;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   display: none;
+  z-index: 3;
 }
 
 .modal {
@@ -1355,7 +1361,7 @@ outline: none;
   box-sizing: border-box;
   border: none;
   background-color: transparent;
-
+  position: relative;
 }
 
 .button-min,
@@ -1367,37 +1373,56 @@ outline: none;
   position: relative;
   background-color: #F2F2F2;
   cursor: pointer;
+  border-radius: 4px;
+  outline: none;
 }
 
 .button-min::before {
   position: absolute;
-  width: 13px;
-  height: 13px;
-  top: 14px;
-  content: url("../images/icons/minus.svg");
+  width: 17px;
+  height: 17px;
+  top: 18px;
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 30%;
+  content: "";
 }
 
 .button-plus::before {
   position: absolute;
-  width: 13px;
-  height: 13px;
-  bottom: 20px;
-  left: 10px;
-  content: url("../images/icons/plus.svg");
+  width: 17px;
+  height: 17px;
+  top: 18px;
+  left: 8px;
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
   opacity: 30%;
+  content: "";
 }
 
-.button-min:hover::before {
-  background-color: #F2F2F2;
-  opacity: 100%;
-  cursor: pointer;
-}
-
+.button-min:hover::before,
 .button-plus:hover::before {
   background-color: #F2F2F2;
   opacity: 100%;
   cursor: pointer;
+}
+
+.button-min:focus::before,
+.button-plus:focus::before {
+  background-color: #F2F2F2;
+  opacity: 100%;
+  cursor: pointer;
+  outline: 3px solid #83B3D3;
+}
+
+.button-min:active::before,
+.button-plus:active::before {
+  background-color: #F2F2F2;
+  opacity: 20%;
+  cursor: pointer;
+  outline: 0;
 }
 
 .tooltip {
