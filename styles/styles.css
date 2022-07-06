@@ -89,7 +89,8 @@ body {
   /* height: 60px; */
   background-color: #82B3D3;
   font-size: 20px;
-  padding: 16px 18px;
+  line-height: 36px;
+  padding: 12px 18px;
   text-align: center;
   box-sizing: border-box;
 }
@@ -468,10 +469,6 @@ body {
   box-sizing: border-box;
 }
 
-p {
-  color: #333333;
-}
-
 .subscribe {
   background-image: url("../images/background-subscribe.jpg");
   background-size: 100% auto;
@@ -491,7 +488,6 @@ p {
 }
 
 .subscribe-description {
-  color: #FFFFFF;
   font-size: 22px;
   line-height: 26px;
   margin-bottom: 46px;
@@ -553,7 +549,7 @@ p {
 }
 .breadcrumbs-item {
   min-width: 12px;
-  margin-right: 12px;
+  margin-right: 13px;
 }
 
 /* .breadcrumbs-item {
@@ -579,13 +575,16 @@ p {
   background-position: center;
   width: 6px;
   height: 7px;
-  margin-left: 3px;
-  margin-right: 10px;
+  /* margin-left: 3px;
+  margin-right: 10px; */
   display: inline-block;
   top: 8px;
-  left: 25px;
+  left: 20px;
 }
 
+.breadcrumbs-current {
+  margin-left: 10px;
+}
 /* .breadcrumbs:hover li {
   opacity: 0,1;
 } */
@@ -1032,15 +1031,29 @@ outline: none;
   padding-left: 0;
   list-style-type: none;
   flex-wrap: wrap;
+  position: relative;
 }
-
+/*
+.catalog {
+  position: relative;
+} */
+.hotel-card:last-child::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -68px;
+  height: 1px;
+  background-color: #E6E6E6;
+  content: "";
+  z-index: 2;
+}
 .subscribe-catalog {
   background-color: #FFFFFF;
   color:#000000;
   padding: 94px 200px;
 }
 .wrap-pagination {
-  margin-top: 94px;;
+  margin-top: 96px;;
   display: flex;
   justify-content: space-between;
   text-align: center;
