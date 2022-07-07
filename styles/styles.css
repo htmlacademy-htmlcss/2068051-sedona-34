@@ -218,7 +218,7 @@ input::-webkit-inner-spin-button {
 .navigation-link-current::before {
   position: absolute;
   right: 17px;
-  bottom: -3px;
+  bottom: 0;
   left: 17px;
   height: 2px;
   background-color: #756257;
@@ -366,7 +366,7 @@ input::-webkit-inner-spin-button {
 
 .advantage-order,
 .bridge-about {
-  padding-top: 92px;
+  padding-top: 89px;
   padding-bottom: 74px;
   box-sizing: border-box;
 }
@@ -419,16 +419,16 @@ input::-webkit-inner-spin-button {
 .advantages-live,
 .advantages-food,
 .advantages-souvenirs {
-  padding-top: 80px;
+  padding-top: 114px;
   position: relative;
 }
 
 .advantages-live::before {
   position: absolute;
-  left: 40%;
+  left: 41%;
   background-image: url("../images/icons/live.svg");
   background-repeat: no-repeat;
-  top: 20%;
+  top: 21%;
   width: 75px;
   height: 75px;
   content: "";
@@ -566,7 +566,7 @@ input::-webkit-inner-spin-button {
 
 .breadcrumbs-item {
   min-width: 12px;
-  margin-right: 13px;
+  margin-right: 17px;
 }
 
 .breadcrumbs-link-home {
@@ -588,8 +588,8 @@ input::-webkit-inner-spin-button {
   width: 6px;
   height: 7px;
   display: inline-block;
-  top: 8px;
-  left: 20px;
+  top: 7px;
+  left: 23px;
 }
 
 .breadcrumbs-current {
@@ -610,7 +610,8 @@ input::-webkit-inner-spin-button {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+  margin-left: -3px;
 }
 
 .catalog-filter-group {
@@ -618,7 +619,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog {
-  padding: 52px 71px 25px 72px;
+  padding: 53px 71px 25px 72px;
 }
 
 .search-results {
@@ -645,13 +646,16 @@ input::-webkit-inner-spin-button {
   margin-top: 37px;
 }
 
-.container-infrastructure,
+.container-infrastructure {
+  margin-right: 71px;
+}
+
 .container-price {
-  margin-right: 70px;
+  margin-right: 69px;
 }
 
 .container-type-of-accomodation {
-  margin-right: 174px;
+  margin-right: 177px;
 }
 
 .catalog-filter-group {
@@ -734,7 +738,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   width: 288px;
   height: 4px;
-  margin-top: 32px;
+  margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 4px;
 }
@@ -786,6 +790,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   width: 288px;
+  margin-top: 2px;
 }
 
 .catalog-filter-label {
@@ -793,7 +798,7 @@ input::-webkit-inner-spin-button {
 }
 
 .range-input {
-  padding: 12px 15px 12px 19px;
+  padding: 12px 15px 12px 15px;
   width: 145px;
   font: inherit;
   color: #ffffff;
@@ -883,6 +888,7 @@ input::-webkit-inner-spin-button {
   border: none;
   font: inherit;
   color: #ffffff;
+  font-size: 16px;
 }
 
 .reset-button:hover {
