@@ -449,8 +449,8 @@ input[type=number] {
           justify-content: center;
   width: 400px;
   min-height: 384px;
-  padding-right: 85px;
-  padding-left: 85px;
+  padding-right: 84px;
+  padding-left: 84px;
   list-style-type: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -491,7 +491,7 @@ input[type=number] {
 .advantages-live,
 .advantages-food,
 .advantages-souvenirs {
-  padding-top: 114px;
+  padding-top: 116px;
   position: relative;
 }
 
